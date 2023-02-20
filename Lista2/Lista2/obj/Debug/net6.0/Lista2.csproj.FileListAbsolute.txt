@@ -1,0 +1,15 @@
+C:\Users\szymo\source\repos\Lista2\Lista2\bin\Debug\net6.0\Lista2.exe
+C:\Users\szymo\source\repos\Lista2\Lista2\bin\Debug\net6.0\Lista2.deps.json
+C:\Users\szymo\source\repos\Lista2\Lista2\bin\Debug\net6.0\Lista2.runtimeconfig.json
+C:\Users\szymo\source\repos\Lista2\Lista2\bin\Debug\net6.0\Lista2.dll
+C:\Users\szymo\source\repos\Lista2\Lista2\bin\Debug\net6.0\Lista2.pdb
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.csproj.AssemblyReference.cache
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.AssemblyInfoInputs.cache
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.AssemblyInfo.cs
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.csproj.CoreCompileInputs.cache
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.dll
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\refint\Lista2.dll
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.pdb
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\Lista2.genruntimeconfig.cache
+C:\Users\szymo\source\repos\Lista2\Lista2\obj\Debug\net6.0\ref\Lista2.dll
