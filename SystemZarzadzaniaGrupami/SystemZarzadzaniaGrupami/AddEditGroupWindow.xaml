@@ -1,0 +1,24 @@
+﻿<Window x:Class="StudentGroups.AddEditGroupWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="{Binding WindowTitle}"
+     Width="400"
+     Height="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Group Name:" />
+            <TextBox Text="{Binding Group.Name, Mode=TwoWay}" Margin="10,0,0,0" />
+        </StackPanel>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Group.Students}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedStudent}" Margin="10" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10">
+            <Button Content="Add Student" Click="AddStudent_Click" Margin="0,0,10,0" />
+            <Button Content="Edit Student" Click="EditStudent_Click" Margin="0,0,10,0" />
+            <Button Content="Delete Student" Click="DeleteStudent_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

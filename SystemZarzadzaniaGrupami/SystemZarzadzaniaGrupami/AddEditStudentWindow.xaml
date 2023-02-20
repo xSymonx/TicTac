@@ -1,0 +1,62 @@
+﻿<Window x:Class="StudentGroups.AddEditStudentWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="{Binding WindowTitle}"
+     Width="400"
+     Height="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Name:" />
+            <TextBox Text="{Binding Student.Name, Mode=TwoWay}" Margin="10,0,0,0" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="10">
+            <TextBlock Text="Residential Address" FontWeight="Bold" />
+            <StackPanel Margin="10,0,0,0">
+                <TextBlock Text="Street:" />
+                <TextBox Text="{Binding Student.ResidentialAddress.Street, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="City:" />
+                <TextBox Text="{Binding Student.ResidentialAddress.City, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="State:" />
+                <TextBox Text="{Binding Student.ResidentialAddress.State, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="Zip Code:" />
+                <TextBox Text="{Binding Student.ResidentialAddress.ZipCode, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="Country:" />
+                <ComboBox SelectedItem="{Binding Student.ResidentialAddress.Country, Mode=TwoWay}" Margin="10,0,0,0">
+                    <ComboBoxItem>USA</ComboBoxItem>
+                    <ComboBoxItem>Canada</ComboBoxItem>
+                    <ComboBoxItem>UK</ComboBoxItem>
+                    <ComboBoxItem>France</ComboBoxItem>
+                    <ComboBoxItem>Germany</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <TextBlock Text="Mailing Address" FontWeight="Bold" Margin="0,10,0,0" />
+            <CheckBox Content="Same as Residential Address" IsChecked="{Binding SameAsResidentialAddress}" Margin="10,0,0,0" />
+            <StackPanel Margin="20,0,0,0">
+                <TextBlock Text="Street:" />
+                <TextBox Text="{Binding Student.MailingAddress.Street, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="City:" />
+                <TextBox Text="{Binding Student.MailingAddress.City, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="State:" />
+                <TextBox Text="{Binding Student.MailingAddress.State, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="Zip Code:" />
+                <TextBox Text="{Binding Student.MailingAddress.ZipCode, Mode=TwoWay}" Margin="10,0,0,0" />
+                <TextBlock Text="Country:" />
+                <ComboBox SelectedItem="{Binding Student.MailingAddress.Country, Mode=TwoWay}" Margin="10,0,0,0">
+                    <ComboBoxItem>USA</ComboBoxItem>
+                    <ComboBoxItem>Canada</ComboBoxItem>
+                    <ComboBoxItem>UK</ComboBoxItem>
+                    <ComboBoxItem>France</ComboBoxItem>
+                    <ComboBoxItem>Germany</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button Content="OK" Width="75" Margin="10" Command="{Binding OKCommand}" />
+            <Button Content="Cancel" Width="75" Margin="10" Command="{Binding CancelCommand}" />
+        </StackPanel>
+    </Grid>
+</Window>
